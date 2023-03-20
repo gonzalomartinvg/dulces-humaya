@@ -7,17 +7,13 @@
 }
 
 :root{
-  --primary-color: #222;
-  --primary-color-light: #9bd3f8;
-  --primary-color-hard: #004695;
+  --primary-color: #212529;
+  --primary-color-light: #3a4147;
+  --primary-color-hard: #121416;
   --secondary-color: #bca177;
-  --secondary-color-dark: #978059;
-  --accent-color: #ef007e;
+  --secondary-color-hard: #978059;
   --blanco-1: #ffff;
   --blanco-2: #f8f5f5;
-  --gris-1: #e6e3e3;
-  --gris-2: #3f3f3f;
-  --gris-3: #0f0f0f;
 }
 
 .titulos{
@@ -26,6 +22,7 @@
   margin-bottom: 1rem;
   font-weight: 700;
 }
+
 
 /*PRESENTACIÓN*/
 
@@ -108,14 +105,49 @@
 }
 
 .botonMasInfoProducto:hover{
-  background-color: var(--secondary-color-dark);
+  background-color: var(--secondary-color-hard);
   color: var(--blanco-1);
+}
+
+/*FORMULARIO DE CONTACTO*/
+
+.formulario{
+  width: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color: var(--primary-color);
+}
+
+.tituloForm{
+  width: 90%;
+  margin: auto;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+.contenedorFormulario{
+  width: 90%;
+  margin: auto;
+  margin-top: 1rem;
+  color: var(--blanco-1);
+}
+
+.botonFormulario{
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  border: none;
+  padding: 0.5rem;
+  color: var(--blanco-1);
+}
+
+.botonFormulario:hover{
+  background-color: var(--secondary-color-hard);
 }
 
 /*RECETAS*/
 
 .recetas{
-  background-color: var(--secondary-color-dark);
+  background-color: var(--secondary-color);
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -155,4 +187,33 @@
   .slider{
     min-width: calc(30% - .5rem);
   }
+}
+
+/*MAPA*/
+
+.localizacion{
+  width: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color: var(--secondary-color-hard);
+}
+
+.contenedorMapa{
+  width: 90%;
+  margin: auto;
+}
+
+.mapa{
+  width: 100%;
+  height: 15rem;
+  border-radius: 10px;
+}
+
+/*FOOTER*/
+
+.containerFooter{
+  width: 100%;
+  background-color: var(--primary-color);
+  position: relative;
+  bottom: 1.5rem;
 }
