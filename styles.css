@@ -209,6 +209,165 @@
   border-radius: 10px;
 }
 
+/*COMENTARIOS*/
+
+.comentarios{
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+  background-color: var(--primary-color-light);
+}
+
+.contenedor-google{
+  width: 90%;
+  margin: auto;
+  margin-top: 2.5rem;
+  display: flex;
+}
+
+@media (max-width: 600px){
+   
+  .contenedor-google{
+      width: 50%;
+  }
+}
+
+.logo-google{
+ width: 4rem;
+}
+
+.contenedor-titulo-estrellas{
+  width: 90%;
+  margin: auto;
+}
+
+.titulo-comentarios{
+  color: var(--blanco-1);
+}
+
+.estrellas-totales{
+  width: 6rem;
+}
+
+.cantidad-opiniones{
+  text-decoration: none;
+  color: var(--blanco-1);
+}
+
+
+.contenedor-comentario-macro{
+  width: 90%;
+  margin: auto;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  grid-gap: 15rem;
+}
+
+@media (max-width: 850px){
+   
+  .contenedor-comentario-macro{
+      grid-gap: 1rem;
+  }
+}
+
+.modificador{
+  font-size: 4rem;
+  align-self: center;
+  color: var(--gris-2);
+  cursor: pointer;
+}
+
+@media (max-width: 600px){
+   
+  .modificador{
+      font-size: 3rem;
+  }
+}
+
+.contenedor-comentario-micro{
+  width: 15rem;
+  background-color: var(--blanco-1);
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0.3rem 0.3rem 0.8rem 0.2rem rgb(99, 99, 99);
+}
+
+.contenedor-comentario-micro-ingresa{
+  width: 15rem;
+  border: 1px solid var(--gris-1);
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0.3rem 0.3rem 0.8rem 0.2rem rgb(99, 99, 99);
+
+ 
+  position: relative;
+  animation-name: movimientoIngresa;
+  animation-duration: 6s; /*La duración debe ser la misma que indicamos en javascript
+  z-index: 1; */
+}
+
+@keyframes movimientoIngresa {
+  0% {left: 7rem; opacity: 0;}
+  30% {left: 0rem; opacity: 1;}
+}
+
+@media (max-width: 600px){
+   
+  @keyframes movimientoIngresa {
+      0% {left: 2rem; opacity: 0;}
+      20% {left: 0rem; opacity: 1;}
+  }
+}
+
+.contenedor-comentario-micro-sale{
+  width: 15rem;
+  border: 1px solid var(--gris-1);
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0.3rem 0.3rem 0.8rem 0.2rem rgb(99, 99, 99);
+
+ 
+  position: relative;
+  animation-name: movimientoSale;
+  animation-duration: 6s; /*La duración debe ser la misma que indicamos en javascript
+  z-index: 1; */
+}
+
+@keyframes movimientoSale {
+  0% {right: 7rem; opacity: 0;}
+  30% {right: 0rem; opacity: 1;}
+}
+
+@media (max-width: 600px){
+   
+  @keyframes movimientoSale {
+      0% {right: 2rem; opacity: 0;}
+      20% {right: 0rem; opacity: 1;}
+  }
+}
+
+.estrellas{
+  width: 7rem;
+}
+
+.contenedor-foto-y-nombre{
+  width: 100%;
+  display: flex;
+  grid-gap: 1rem;
+}
+
+.nombre{
+  font-size: 1.3rem;
+  align-self: center;
+}
+
+.imagen-profile{
+  width: 3.5rem;
+  align-self: center;
+}
+
 /*FOOTER*/
 
 .containerFooter{
